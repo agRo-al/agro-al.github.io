@@ -1,1 +1,13 @@
-title 
+title: "agRo-al"
+author: "Alfonso Benítez-Páez"
+description: "Sitio web para la Microcredencial agRol-al"
+permalink: /:title/
+lang: "es"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+navigation:
+  - {file: "README.md", icon: home}
+
+plugins:
+  - jekyll-feed
