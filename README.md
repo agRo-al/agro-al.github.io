@@ -23,7 +23,7 @@ La presente **microcredencial** tendrá como objetivo la formación de personal 
 <!-- unordered lists -->
 * Modalidad: Presencial.
 * Lugar de impartición: **Instituto de Agroquímica y Tecnología de Alimentos (IATA-CSIC)**. [Carrer del Catedràtic Agustín Escardino Benlloch, 7 (Paterna, Valencia)](https://g.co/kgs/LRrDs2k).
-* Fecha de pre-inscripción: del 7 al 31 de enero de 2025.
+* Fecha de preinscripción: del 7 al 31 de enero de 2025.
 * Fecha de oficialización de matrícula: del 3 al 14 de febrero de 2025.
 * Fecha de inicio y fin: **Estimado entre el 28 de febrero y el 9 de mayo de 2025**.
 * Número de plazas disponibles: 40.
@@ -46,5 +46,9 @@ La Microcredencial se impartirá de manera **presencial** en sesiones de **1.5 h
 
 La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certificaciones se expedirán únicamente en caso de la asistencia y cumplimiento a todas las horas lectivas programadas y a la superación de la evaluación final. La evalución final supondrá la demostración en directo de las competencias adquiridas durante la Microcredencial a partir del manejo y procesamiento de un conjunto de datos propios o preestablecidos en cualquiera de los repositorios disponibles para tal fin.
 
-### *Patrocinadores*
+### *Preinscripción*
 
+Diligencie el formato disponible [aquí](https://saco.csic.es/apps/forms/s/epPWzsqXNYRfzPTiZZkQXmqb).
+
+### *Patrocinadores*
+![](agroal_support.png "agRoalMC support")
