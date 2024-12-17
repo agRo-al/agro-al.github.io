@@ -16,4 +16,4 @@ template:
   name: github-pages-with-jekyll
   repo: github-pages-with-jekyll-template
 
-theme: jekyll-theme-minima
+theme: jekyll-theme-slate
