@@ -50,5 +50,9 @@ La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certific
 
 Diligencie el formato disponible [aquí](https://saco.csic.es/apps/forms/s/epPWzsqXNYRfzPTiZZkQXmqb).
 
+### *Dirección y contacto*
+
+**Alfonso Benítez Páez** (abenitez@iata.csic.es).
+
 ### *Patrocinadores*
 ![](agroal_support.png "agRoalMC support")
