@@ -7,7 +7,7 @@ La investigación científica en el campo de la **agroalimentación** avanza rá
 
 Si bien es cierto que la formación y la adquisición de competencias en el **entorno R** para el análisis de datos no representa una novedad, la microcredencial propuesta se fundamenta en la particularidad de apropiación inmediata de la herramienta por parte del **personal investigador** en su etapa más temprana de la carrera científica de manera prioritaria pero no limitada a ellos. Tanto la versatilidad como la **política de acceso abierto** de los recursos a difundir permitirán al estudiante e investigador una inmersión directa y utilización de dichas herramientas en la consecución de sus objetivos de investigación (e.g. tesis doctoral, TFMs, publicaciones, reportes científicos a empresas, etc.). 
 
-### *Objeto*
+### *Objetivo*
 
 La presente **microcredencial** tendrá como objetivo la formación de personal investigador, tanto del **IATA-CSIC** como con vinculación activa en empresas o instituciones del sector agroalimentario, en competencias académicas para  alcanzar el conocimiento y la habilidad en los siguientes procesos:
 
