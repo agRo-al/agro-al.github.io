@@ -1,7 +1,6 @@
-# agRo-al
+![](agroal_banner.png "agRoalMC banner")
 
 # Microcredencial en "Principios básicos de generación y análisis de datos de agroalimentación en R"
-![](agroal_banner.png "agRoalMC banner")
 
 ### *Presentación*
 
