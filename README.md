@@ -21,13 +21,13 @@ La presente **microcredencial** tendrá como objetivo la formación de personal 
 *Datos e información generales de la Microcredencial*
 
 <!-- unordered lists -->
-*Modalidad: Presencial.
-*Lugar de impartición: Instituto de Agroquímica y Tecnología de Alimentos (IATA-CSIC). Carrer del Catedràtic Agustín Escardino Benlloch, 7 (Paterna, Valencia).
-*Fecha de pre-inscripción: del 7 al 31 de enero de 2025.
-*Fecha de oficialización de matrícula: del 3 al 14 de febrero de 2025.
-*Fecha de inicio y fin: Estimado entre el 28 de febrero y el 9 de mayo de 2025 (sesiones los viernes entre 9h y 10.30h).
-*Número de plazas disponibles: 40.
-*Número de horas totales de la formación: 50h (2 ECTS).
-*Precio de matrícula: **sin coste** (primera versión financiada por el programa de Microcredenciales CSIC-MICIU).
-*Idioma: Castellano/Inglés
-*Nivel MEC de aprendizaje: niveles 5 a 8.
+* Modalidad: Presencial.
+* Lugar de impartición: Instituto de Agroquímica y Tecnología de Alimentos (IATA-CSIC). Carrer del Catedràtic Agustín Escardino Benlloch, 7 (Paterna, Valencia).
+* Fecha de pre-inscripción: del 7 al 31 de enero de 2025.
+* Fecha de oficialización de matrícula: del 3 al 14 de febrero de 2025.
+* Fecha de inicio y fin: Estimado entre el 28 de febrero y el 9 de mayo de 2025 (sesiones los viernes entre 9h y 10.30h).
+* Número de plazas disponibles: 40.
+* Número de horas totales de la formación: 50h (2 ECTS).
+* Precio de matrícula: **sin coste** (primera versión financiada por el programa de Microcredenciales CSIC-MICIU).
+* Idioma: Castellano/Inglés
+* Nivel MEC de aprendizaje: niveles 5 a 8.
