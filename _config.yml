@@ -11,3 +11,7 @@ navigation:
 
 plugins:
   - jekyll-feed
+
+template:
+  name: github-pages-with-jekyll
+  repo: github-pages-with-jekyll-template
