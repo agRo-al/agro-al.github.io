@@ -1,6 +1,6 @@
 title: "agRo-al"
 author: "Alfonso Benítez-Páez"
-description: "Sitio web para la Microcredencial agRol-al"
+description: "Sitio web de la Microcredencial agRo-al"
 permalink: /:title/
 lang: "es"
 excerpt_separator: "\n\n\n"
