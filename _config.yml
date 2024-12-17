@@ -4,10 +4,10 @@ description: "Sitio web para la Microcredencial agRol-al"
 permalink: /:title/
 lang: "es"
 excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+date_format: "%d, %m, %Y"
 
 navigation:
-  - {file: "README.md", icon: home}
+  - {file: "README.md", title: "HOME", icon: home}
 
 plugins:
   - jekyll-feed
