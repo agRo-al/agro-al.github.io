@@ -54,5 +54,5 @@ Diligencie el formato disponible [aquí](https://saco.csic.es/apps/forms/s/epPWz
 
 Alfonso Benítez Páez (abenitez@iata.csic.es).
 
-### *Patrocinadores*
+### *Financiación y auspicio*
 ![](agroal_support.png "agRoalMC support")
