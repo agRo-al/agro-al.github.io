@@ -22,7 +22,7 @@ La presente **microcredencial** tendrá como objetivo la formación de personal 
 
 <!-- unordered lists -->
 * Modalidad: Presencial.
-* Lugar de impartición: Instituto de Agroquímica y Tecnología de Alimentos (IATA-CSIC). Carrer del Catedràtic Agustín Escardino Benlloch, 7 (Paterna, Valencia).
+* Lugar de impartición: Instituto de Agroquímica y Tecnología de Alimentos (IATA-CSIC). [Carrer del Catedràtic Agustín Escardino Benlloch, 7 (Paterna, Valencia)] (https://g.co/kgs/LRrDs2k).
 * Fecha de pre-inscripción: del 7 al 31 de enero de 2025.
 * Fecha de oficialización de matrícula: del 3 al 14 de febrero de 2025.
 * Fecha de inicio y fin: Estimado entre el 28 de febrero y el 9 de mayo de 2025 (sesiones los viernes entre 9h y 10.30h).
