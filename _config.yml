@@ -1,6 +1,6 @@
 title: "agRo-al"
 author: "Alfonso Benítez-Páez"
-description: "Sitio web de la Microcredencial agRo-al"
+description: "Microcredencial para el aprendizaje sobre el manejo de datos de investigación"
 permalink: /:title/
 lang: "es"
 excerpt_separator: "\n\n\n"
