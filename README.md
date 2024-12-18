@@ -4,9 +4,9 @@
 
 ### *Presentación*
 
-La investigación científica en el campo de la **agroalimentación** avanza rápidamente hacia el enfoque **multidisciplinar** e **interdisciplinar** donde convergen diversas aproximaciones tecnológicas las cuales, en su gran mayoría, tienen una alta capacidad de procesamiento de muestras biológicas y generan **volúmenes de información masivos**. En consecuencia, nuestra investigación se direcciona inequívocamente hacia la **integración** de una vasta información a partir de diversas **capas de información** de tipo molecular, ambiental, clínica y sociológica –entre otras– que tratan de generar conocimiento, productos y desarrollos biotecnológicos desde una perspectiva holística.
+La investigación científica en el campo de la **agroalimentación** avanza rápidamente hacia un enfoque **multidisciplinar** e **interdisciplinar** donde convergen diversas aproximaciones tecnológicas las cuales, en su gran mayoría, tienen una alta capacidad de procesamiento de muestras biológicas y generan grandes **volúmenes de información**. En consecuencia, dicha investigación se direcciona inequívocamente hacia la **integración** de múltiples datos generados a partir de diversas **capas de información** de tipo molecular, ambiental, clínica y sociológica –entre otras– que tratan de generar nuevo conocimiento, productos innovadores y desarrollos biotecnológicos ambiciosos.
 
-Si bien es cierto que la formación y la adquisición de competencias en el **entorno R** para el análisis de datos no representa una novedad, la microcredencial propuesta se fundamenta en la particularidad de apropiación inmediata de la herramienta por parte del **personal investigador** en su etapa más temprana de la carrera científica de manera prioritaria pero no limitada a ellos. Tanto la versatilidad como la **política de acceso abierto** de los recursos a difundir permitirán al estudiante e investigador una inmersión directa y utilización de dichas herramientas en la consecución de sus objetivos de investigación (e.g. tesis doctoral, TFMs, publicaciones, reportes científicos a empresas, etc.). 
+Si bien es cierto que la formación y la adquisición de competencias en el **entorno R** para el análisis de datos no representa una novedad, la microcredencial propuesta se fundamenta en la particularidad de apropiación inmediata de la herramienta por parte del **personal investigador** en su etapa más temprana de la carrera científica de manera prioritaria pero no limitada a ellos. Tanto la versatilidad como la **política de acceso abierto** de los recursos a difundir, permitirán al estudiante e investigador una inmersión directa y utilización de dichas herramientas en la consecución de sus objetivos de investigación (e.g. tesis doctoral, TFMs, publicaciones, reportes científicos a empresas, etc.). 
 
 ### *Objetivo*
 
@@ -45,7 +45,7 @@ La Microcredencial se impartirá de manera **presencial** en sesiones de **1.5 h
 * [R](https://cran.r-project.org/)
 * [RStudio](https://posit.co/download/rstudio-desktop/)
 
-La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certificaciones se expedirán únicamente en caso de la asistencia y cumplimiento a todas las horas lectivas programadas y a la superación de la evaluación final. La evalución final supondrá la demostración en directo de las competencias adquiridas durante la Microcredencial a partir del manejo y procesamiento de un conjunto de datos propios o preestablecidos en cualquiera de los repositorios disponibles para tal fin.
+La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certificaciones se expedirán únicamente en caso de la asistencia y cumplimiento a todas las horas lectivas programadas y a la superación de la evaluación final. Dicha evaluación final supondrá la presentación y demostración (ejecución de un script de R) de las competencias adquiridas durante la Microcredencial a partir del manejo y procesamiento de un conjunto de datos propios o preestablecidos, utilizando cualquiera de los repositorios disponibles para tal fin.
 
 ### *Preinscripción*
 
