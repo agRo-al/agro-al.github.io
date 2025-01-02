@@ -39,7 +39,7 @@ Personal investigador con edades entre 25 y  64 años edad y con vinculación vi
 
 ### *Formato y desarrollo de la Microcredencial*
 
-La Microcredencial se impartirá de manera **presencial** en sesiones de **1.5 horas** los días viernes entre 9h y 10.30h en la sala de conferencias del IATA-CSIC. Las personas inscritas y matriculadas deberán traer su propio recurso informatico (PCs), del cual la organización no se hará responsable de su mantenimiento, funcionamiento y/o daños que pueda tener durante la duración de la Microcredencial. El equipamiento informático deberá contar con la instalación previa de las versiones más recientes del software:
+La Microcredencial se impartirá de manera **presencial** en sesiones de **1.5 horas** los días viernes entre 9:30h y 11:00h en la sala de conferencias del IATA-CSIC. Las personas inscritas y matriculadas deberán traer su propio recurso informatico (PCs), del cual la organización no se hará responsable de su mantenimiento, funcionamiento y/o daños que pueda tener durante la duración de la Microcredencial. El equipamiento informático deberá contar con la instalación previa de las versiones más recientes del software:
 
 <!-- unordered lists -->
 * [R](https://cran.r-project.org/)
