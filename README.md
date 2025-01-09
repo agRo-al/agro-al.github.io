@@ -39,13 +39,13 @@ Personal investigador con edades entre 25 y  64 años edad y con vinculación vi
 
 ### *Formato y desarrollo de la Microcredencial*
 
-La Microcredencial se impartirá de manera **presencial** en sesiones de **1.5 horas** los días viernes entre 9:30h y 11:00h en la sala de conferencias del IATA-CSIC. Las personas inscritas y matriculadas deberán traer su propio recurso informatico (PCs), del cual la organización no se hará responsable de su mantenimiento, funcionamiento y/o daños que pueda tener durante la duración de la Microcredencial. El equipamiento informático deberá contar con la instalación previa de las versiones más recientes del software:
+La Microcredencial se impartirá de manera **presencial** en sesiones de **1.5 horas** los días viernes entre 10:30h y 12:00h en la sala de conferencias del IATA-CSIC. Las personas inscritas y matriculadas deberán traer su propio recurso informatico portátil (PCs), del cual la organización no se hará responsable de su mantenimiento, funcionamiento y/o daños que pueda tener durante la duración de la Microcredencial. El equipamiento informático deberá contar con la instalación previa de las versiones más recientes del software:
 
 <!-- unordered lists -->
 * [R](https://cran.r-project.org/)
 * [RStudio](https://posit.co/download/rstudio-desktop/)
 
-La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certificaciones se expedirán únicamente en caso de la asistencia y cumplimiento a todas las horas lectivas programadas y a la superación de la evaluación final. Dicha evaluación final supondrá la presentación y demostración (ejecución de un script de R) de las competencias adquiridas durante la Microcredencial a partir del manejo y procesamiento de un conjunto de datos propios o preestablecidos, utilizando cualquiera de los repositorios disponibles para tal fin.
+La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certificaciones se expedirán únicamente en caso de la asistencia y cumplimiento a todas las horas lectivas programadas y a la superación de la evaluación final. Dicha evaluación final supondrá la presentación y demostración (proyecto de creación y ejecución de un script de R) de las competencias adquiridas durante la Microcredencial a partir del manejo y procesamiento de un conjunto de datos propios o preestablecidos, utilizando cualquiera de los repositorios disponibles para tal fin.
 
 ### *Preinscripción*
 
