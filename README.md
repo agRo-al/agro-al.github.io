@@ -47,9 +47,15 @@ La Microcredencial se impartirá de manera **presencial** en sesiones de **1.5 h
 
 La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certificaciones se expedirán únicamente en caso de la asistencia y cumplimiento a todas las horas lectivas programadas y a la superación de la evaluación final. Dicha evaluación final supondrá la presentación y demostración (proyecto de creación y ejecución de un script de R) de las competencias adquiridas durante la Microcredencial a partir del manejo y procesamiento de un conjunto de datos propios o preestablecidos, utilizando cualquiera de los repositorios disponibles para tal fin.
 
-### *Preinscripción*
+### *Sesiones*
 
-Diligencie el formato disponible [~~aquí~~](https://agro-al.github.io).
+<!-- ordered lists -->
+
+1. [Intro](session1.html)
+
+### *~~Preinscripción~~*
+
+~~Diligencie el formato disponible~~ [~~aquí~~](https://agro-al.github.io).
 
 ### *Dirección y contacto*
 
