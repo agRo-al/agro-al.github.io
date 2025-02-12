@@ -50,7 +50,7 @@ La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certific
 ### *Sesiones*
 
 <!-- ordered lists -->
-1. [Intro - 2025.02.28](https://agro-al.github.io)
+1. [Intro "R 101" (2025.02.28)](https://agro-al.github.io)
 
 ### *~~Preinscripción~~*
 
