@@ -53,7 +53,7 @@ Alfonso Benítez Páez (abenitez@iata.csic.es).
 
 ---
 
-### *Sesiones*
+### *Sesiones teórico-prácticas*
 
 <!-- ordered lists -->
 1. [Intro "R 101" (2025.02.28)](https://agro-al.github.io)
