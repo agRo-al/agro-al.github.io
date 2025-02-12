@@ -47,18 +47,18 @@ La Microcredencial se impartirá de manera **presencial** en sesiones de **1.5 h
 
 La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certificaciones se expedirán únicamente en caso de la asistencia y cumplimiento a todas las horas lectivas programadas y a la superación de la evaluación final. Dicha evaluación final supondrá la presentación y demostración (proyecto de creación y ejecución de un script de R) de las competencias adquiridas durante la Microcredencial a partir del manejo y procesamiento de un conjunto de datos propios o preestablecidos, utilizando cualquiera de los repositorios disponibles para tal fin.
 
+### *Dirección y contacto*
+
+Alfonso Benítez Páez (abenitez@iata.csic.es).
+
+---
+
 ### *Sesiones*
 
 <!-- ordered lists -->
 1. [Intro "R 101" (2025.02.28)](https://agro-al.github.io)
 
-### *~~Preinscripción~~*
-
-~~Diligencie el formato disponible~~ [~~aquí~~](https://agro-al.github.io).
-
-### *Dirección y contacto*
-
-Alfonso Benítez Páez (abenitez@iata.csic.es).
+---
 
 ### *Financiación y auspicio*
 ![](agroal_support.png "agRoalMC support")
