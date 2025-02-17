@@ -10,7 +10,7 @@ Si bien es cierto que la formación y la adquisición de competencias en el **en
 
 ### *Objetivo*
 
-La presente **microcredencial** tendrá como objetivo la formación de personal investigador, tanto del **IATA-CSIC** como con vinculación activa en empresas o instituciones del sector agroalimentario, en competencias académicas para  alcanzar el conocimiento y la habilidad en los siguientes procesos:
+La presente **Microcredencial** tendrá como objetivo la formación de personal investigador, tanto del **IATA-CSIC** como con vinculación activa en empresas o instituciones del sector agroalimentario, en competencias académicas para  alcanzar el conocimiento y la habilidad en los siguientes procesos:
 
 <!-- unordered lists -->
 1. Organización y creación de datos biológicos relacionados con la agroalimentación
@@ -27,7 +27,7 @@ La presente **microcredencial** tendrá como objetivo la formación de personal 
 * Fecha de preinscripción: ~~del 7 al 31 de enero de 2025~~.
 * Fecha de oficialización de matrícula: ~~del 3 al 14 de febrero de 2025~~.
 * Fecha de inicio y fin: **Estimado entre el 28 de febrero y el 30 de mayo de 2025**.
-* Número de plazas disponibles: 40.
+* Número de plazas disponibles: ~~40~~.
 * Número de horas totales de la formación: 50h (2 ECTS).
 * Precio de matrícula: **sin coste** (primera versión financiada por el programa de Microcredenciales CSIC-MICIU).
 * Idioma: Castellano/Inglés
