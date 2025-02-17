@@ -56,8 +56,8 @@ Alfonso Benítez Páez (abenitez@iata.csic.es).
 ### *Sesiones teórico-prácticas*
 
 <!-- ordered lists -->
-1. [Intro "R 101" (2025.02.28)](https://agro-al.github.io)
-2. [R operators and objects (2025.03.07)](https://agro-al.github.io)
+1. [Session 1 - Intro "R 101" (2025.02.28)](https://agro-al.github.io)
+2. [Session 2 - R operators and objects (2025.03.07)](https://agro-al.github.io)
 
 ---
 
