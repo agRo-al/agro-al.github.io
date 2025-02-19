@@ -62,7 +62,7 @@ Alfonso Benítez Páez (abenitez@iata.csic.es).
 
 ---
 
-### *Material creado por la experiencia de los participantes*
+### *Material creado por los participantes*
 
 
 ---
