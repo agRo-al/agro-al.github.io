@@ -62,5 +62,10 @@ Alfonso Benítez Páez (abenitez@iata.csic.es).
 
 ---
 
+### *Recursos creados por participantes*
+
+
+---
+
 ### *Financiación y auspicio*
 ![](agroal_support.png "agRoalMC support")
