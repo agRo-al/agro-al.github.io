@@ -539,7 +539,8 @@ by their names and their content, but they also have
 <strong>attributes</strong> which indicate the type of data represented.
 All <strong>R</strong> objects have two intrinsic attributes:
 <em>mode</em> and <em>length</em>. The <em>mode</em> is the basic type
-of the elements of the object; there are four main modes:</p>
+of the elements of the object (similar to <em>class</em>); there are
+four main modes:</p>
 <!-- unordered lists -->
 <ul>
 <li>numeric (e.g. 1, 2, 3)</li>
@@ -551,9 +552,11 @@ of the elements of the object; there are four main modes:</p>
 the object. Both attributes can be inspected on any <strong>R</strong>
 object using the functions mode and length, respectively:</p>
 <p><code>mydata &lt;- seq(1:25)</code></p>
+<p><code>mydata</code></p>
 <p><code>mode(mydata)</code></p>
 <p><code>length(mydata)</code></p>
 <p><code>mydata &lt;- c(&quot;high&quot;, &quot;medium&quot;, &quot;low&quot;)</code></p>
+<p><code>mydata</code></p>
 <p><code>mode(mydata)</code></p>
 <p><code>length(mydata)</code></p>
 <p><strong>IMPORTANT</strong>: Missing data, of any mode, are
@@ -562,6 +565,7 @@ can represents non-finite numeric values with <em>Inf</em> and
 <em>-Inf</em>, or values which are not numbers with <em>NaN</em> (not a
 number).</p>
 <p><code>a &lt;- 9/0</code></p>
+<p><code>a</code></p>
 <p><code>a - a</code></p>
 <hr />
 </div>

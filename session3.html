@@ -364,6 +364,7 @@ recognize the different object types you can create:</p>
 quotes, including break lines or not. Thus, “spores” and “elevated spore
 count” are each objects with a single character value.</p>
 <p><code>a &lt;- &quot;elevated spore count&quot;</code></p>
+<p><code>a</code></p>
 <p><code>mode(a)</code></p>
 <p><strong>Vectors</strong>: an ordered collection of numbers or
 character strings indexed by the integers (e.g. 1, 2, …, n), being the
@@ -371,15 +372,17 @@ last integer (n) the vector length. Upon creation of a vector containing
 numeric and character values, R will automatically convert the numeric
 values to characters.</p>
 <p><code>y &lt;- c(12, 58, 96, 35)</code></p>
+<p><code>y</code></p>
 <p><code>mode(y)</code></p>
 <p><code>is.vector(y)</code></p>
-<p><code>y[3]</code></p>
+<p><code>length(y)</code></p>
 <p><strong>Factors</strong>: a type of vector containing underlying
 numeric values (e.g. 1, 2, …, n,), each having an associated character
 label. These labels are the <em>levels</em> of the factor. The most
 common use of a factor is to store a categorical variable for use in
 data analysis as a discriminant variable.</p>
 <p><code>z &lt;- c(&quot;variety.A&quot;, &quot;variety.C&quot;, &quot;variety.C&quot;, &quot;variety.B&quot;, &quot;variety.B&quot;, &quot;variety.A&quot;)</code></p>
+<p><code>z</code></p>
 <p><code>class(z)</code></p>
 <p><code>levels(z)</code></p>
 <p><strong>Matrix</strong>: a two-dimensional collection of, generally,
@@ -387,13 +390,15 @@ numeric values indexed by pairs of integers or coordinates <em>(i,
 j)</em>. A matrix has an additional <em>attribute (dim)</em>, having a
 length equal 2.</p>
 <p><code>b &lt;- matrix(c(20,25,32,14,65,26), nrow = 3, ncol = 2)</code></p>
+<p><code>b</code></p>
 <p><code>class(b)</code></p>
 <p><code>dim(b)</code></p>
 <p><strong>List</strong>: contains an ordered collection of objects,
 which can be of different types.</p>
 <p><code>mylist &lt;- list(z, c(10,20,30), &quot;56&quot;, y)</code></p>
+<p><code>mylist</code></p>
 <p><code>class(mylist)</code></p>
-<p><code>mylist[1]</code></p>
+<p><code>mylist[1] ##example of indexation, see next section</code></p>
 <p><strong>Data frame</strong>: is a widely used list type to store
 datasets, with a row for each observation and a column for each
 variable. Each variable can be of a different type. A data frame is
@@ -403,13 +408,44 @@ vectors joined in a data frame must be of the same length.</p>
 <pre><code>mydf &lt;- data.frame(Outcome = c(1, 0, 1, 1, 0, 1, 1, 0),
     Treated = c(&quot;yes&quot;, &quot;yes&quot;, &quot;no&quot;, &quot;no&quot;, &quot;no&quot;, &quot;no&quot;, &quot;yes&quot;, &quot;no&quot;),
     Length = c(24, 55, 39, 18, 34, 56, 25, 30))</code></pre>
+<p><code>mydf</code></p>
 <p><code>class(mydf)</code></p>
 <p><strong>Array</strong>: similar to <em>matrix</em>, an <em>array</em>
 can be a multidimensional object. Upon using the <em>array</em>
 function, we can add the <em>dim</em> parameter to specify the
 dimensions to split data.</p>
-<p><code>myarray &lt;- array(c(1:48), dim = c(4, 6, 2)</code></p>
+<p><code>myarray &lt;- array(c(1:48), dim = c(4, 6, 2))</code></p>
+<p><code>myarray</code></p>
 <p><code>class(myarray)</code></p>
+<hr />
+</div>
+<div id="r-object-element-indexation" class="section level3">
+<h3>R object element indexation</h3>
+<p>The <em>indexation</em> or <em>indexing system</em> is the most
+efficient manner to access or select particular elements of an
+<strong>R</strong> object. It can adopt the numeric or logical
+<em>mode</em>. Suppose you need to know the 8th value of a vector; then
+to access the eighth value of such a vector <em>y</em>, we must type
+<strong>y[3]</strong> which can be used either to extract or to modify
+this value if needed:</p>
+<p><code>y &lt;- seq(1, 100, 12) ##Creating a random vector</code></p>
+<p><code>y[8] ##Accessing to the 8th element of the vector</code></p>
+<p>The indexation of elements in a bi-dimensional object
+(e.g. <em>matrix</em> or <em>data.frame</em>) can be a little more
+complex. It will just require to declare its coordinate or position
+concerning rows and columns numbers:</p>
+<p><code>y &lt;- matrix(seq(1, 100, 12), ncol = 3, nrow = 3) ##Creating a random matrix</code></p>
+<p><code>y[2, 3] ##Accessing to the element placed at the intersection between the second row and third column</code></p>
+<p><code>y[, 3] ##Selecting all the elements of the third column</code></p>
+<p>If your <strong>R</strong> object is composed of other objects, the
+indexation also gain in complexity and ways to do so:</p>
+<p><code>mtcars ##A default dataset implemented in R for training</code></p>
+<p><code>dim(mtcars) ##Recognizing the dimension of the object</code></p>
+<p><code>mode(mtcars) ##Defining the class of the object</code></p>
+<p><code>mtcars[4] ##Accessing the fourth list of the list</code></p>
+<p><code>mtcars[&quot;hp&quot;] ##Accessing the &quot;hp&quot;&quot; list of the list</code></p>
+<p><code>mtcars[2, 4] ##Accessing the second element of the fourth list of the list</code></p>
+<p><code>mtcars[[4]] ##Accessing the elements of the fourth list. Recursive indexing</code></p>
 <hr />
 </div>
 <div id="conversion-between-r-objects" class="section level3">
@@ -419,14 +455,17 @@ the <strong>R</strong> objects created, you can convert and make
 transitions between different object types using the useful
 <em>as.xxxxx</em> functions. Let’s try some of them:</p>
 <pre><code>x &lt;- c(&quot;high&quot;, &quot;low&quot;, &quot;medium&quot;)
+x
 class(x)
 as.factor(x)
 
 x &lt;- c(1,1,1,1,0,0,1,0,1,0)
+x
 class(x)
 as.factor(x)
 
 x &lt;- c(TRUE, TRUE, FALSE, TRUE, FALSE, TRUE)
+x
 class(x)
 as.numeric(x)</code></pre>
 <hr />
