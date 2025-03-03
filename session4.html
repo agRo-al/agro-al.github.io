@@ -430,6 +430,63 @@ levels(mydf$feature)
 tapply(mydf$mydata, mydf$feature, median)
 boxplot(mydf$mydata ~ mydf$feature)</code></pre>
 </div>
+<div id="multiclass-r-objects-and-interactions" class="section level3">
+<h3>Multiclass R objects and interactions</h3>
+<p>Following the below code, we will build a <em>data frame</em> with
+three different variables per observation:</p>
+<pre><code>my_variables&lt;-rep(c(&quot;Yes&quot;, &quot;No&quot;), 500) ## Setting a vector with a two-level factor
+set.seed(2025) ## Seed for random generator
+my_numbers&lt;-sample(450:1800, 1000, replace=TRUE) ## Setting a range of values to generate randomly</code></pre>
+<p>Then, we can evaluate their attributes. Once we distinguish the
+nature of those information <em>vectors</em>, we proceed to merge them
+into the desired <em>data frame</em>.</p>
+<pre><code>mydf &lt;- as.data.frame(my_numbers) ## Adding my previous vectors into a data frame
+mydf[,2] &lt;- my_variables
+head(mydf) ## Checking top entries of my data frame
+dim(mydf) ## Evaluating the dimension attribute
+colnames(mydf)&lt;- c(&quot;Score&quot;, &quot;Growth&quot;) ## Setting proper column (variable) names
+head(mydf)</code></pre>
+<p>Now, let’s create new discriminant <em>factors</em>:</p>
+<pre><code>mydf$Sex&lt;-rep(c(&quot;Female&quot;, &quot;Male&quot;), 500) ## New variable with pre-defined &quot;Sex&quot; column name
+mydf$Enzyme.act &lt;-rep(c(&quot;High&quot;, &quot;Mild&quot;, &quot;Low&quot;, &quot;None&quot;), 250) ## New variable with pre-defined &quot;Enzyme.act&quot; column name
+head(mydf)</code></pre>
+<p>Evaluate <em>attributes</em> of different variables assembled into
+our <em>data frame</em>, including <em>mode</em>, <em>length</em>,
+<em>dimension</em>, and <em>levels</em> of the factors.</p>
+<p>Once you have noticed all the above aspects relevant to your <em>data
+frame</em> structure, we can proceed to explore this dataset in detail.
+The most intuitive analysis is looking at distributions across variables
+independently, taking into account the grouping factors or not.</p>
+<pre><code>## Assessing the average of the numeric variable
+mean(mydf$Score) 
+
+## Retrieving the standard deviation of the numeric variable
+sd(mydf$Score)
+
+## Computing the inter-quartile distribution
+quantile(mydf$Score)
+
+## Calculating 95% Confidence Interval (CI)
+t.test(mydf$Score)$conf.int ## Exploring particular elements from the created object</code></pre>
+<p>Once the numeric variable distribution is evaluated globally, we can
+assess its distribution across different discriminate variables
+(<em>factor</em>). For instance, we will try computing basic statistics
+for the <em>Score</em> numeric variable when discriminated by
+<em>Enzyme.act</em> factor variable:</p>
+<pre><code>## Function to evaluate a numeric variable distribution across factors
+tapply(mydf$Score, mydf$Enzyme.act, mean)
+tapply(mydf$Score, mydf$Enzyme.act, sd)
+tapply(mydf$Score, mydf$Enzyme.act, quantile)</code></pre>
+<p>Please, compute the same statistics for <em>Score</em> numeric
+variable across <em>Sex</em> and <em>Growth</em> factors.</p>
+<p>In case we need a visual inspection of certain results of interest,
+we can launch a rapid graphical visualization of the distribution
+grouped by a particular discriminant variables (<em>factor</em>):</p>
+<pre><code>## Make a basic boxplot
+boxplot(mydf$Score ~ mydf$Enzyme.act)
+stripchart(mydf$Score ~ mydf$Enzyme.act, method = &quot;jitter&quot;, pch = 19, cex = 1.5, add = T, col = c(&quot;black&quot;, &quot;black&quot;, &quot;black&quot;, &quot;black&quot;))</code></pre>
+<hr />
+</div>
 </div>
 
 
