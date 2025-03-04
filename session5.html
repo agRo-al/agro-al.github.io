@@ -11,7 +11,7 @@
 
 
 
-<title>session4</title>
+<title>session5</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -352,139 +352,47 @@ display: none;
 </div>
 
 
-<div id="microcredencial-agro-al---session-4-back-to-home" class="section level1">
-<h1>Microcredencial “agRo-al” - Session 4 | <a href="https://agro-al.github.io">Back to HOME</a></h1>
+<div id="microcredencial-agro-al---session-5-back-to-home" class="section level1">
+<h1>Microcredencial “agRo-al” - Session 5 | <a href="https://agro-al.github.io">Back to HOME</a></h1>
 <hr />
-<div id="creating-r-objects" class="section level3">
-<h3>Creating R objects</h3>
-<p>By recapitulating concepts seen in previous sessions, we will create
-from scratch different R objects to explore them in detail. According to
-the next instruction:</p>
-<p><em>==&gt;Create a vector of numbers between 1 and 1000 with a
-sequential increasing of eight&lt;==</em></p>
-<p>create the appropriate <em>functions</em> and <em>indexing</em> code
-and pseudocode to answer the following questions:</p>
+<div id="reading-external-datasets" class="section level3">
+<h3>Reading external datasets</h3>
+<p>Reading external data produced in third-party resources is the
+regular practice when analyzing small, medium, or large-scale datasets
+in <strong>R</strong>. In this case, two major considerations must be
+taken into account:</p>
 <!-- unordered lists -->
-<ul>
-<li>How many elements contain your vector?</li>
-<li>What is the 83th element of your vector?</li>
-<li>What’s the results of multiplying four times the 52th element?</li>
-<li>What’s the sum of all the elements of your vector?</li>
-</ul>
-<hr />
-<p><strong>The solution is:</strong></p>
-<p><code>mydata &lt;- seq(1, 1000, 8)  ## Create a non-continuous random sequence of numbers</code></p>
-<p><code>mydata</code></p>
-<p><code>length(mydata)  ## Checking the vector lenght</code></p>
-<p><code>mydata[83]  ## Selecting the 83th element of the vector</code></p>
-<p><code>mydata[52] * 4  ## Multiplying all vector elements 2 times</code></p>
-<p><code>sum(mydata)  ## Adding of all vector elements</code></p>
-<hr />
-<p>Now, let’s try a more complex code to create a <em>data
-frame</em>:</p>
-<pre><code>## Take values from a pre-created vector
-mydf&lt;- as.data.frame(mydata)
-
-## Evaluate the dimension attribute of our data frame
-dim(mydf)
-
-## Visual inspection of the data frame
-mydf$mydata
-
-## Random selection on vector elements for grouping variable 1
-groupA &lt;- sample.int(125, 63, replace = F)
-
-## Set the remaining vector elements for grouping variable 2
-groupB &lt;- setdiff(seq(1:125), groupA)
-
-## Evaluate total number of elements in grouping variables
-length(groupA) + length(groupB)
-
-## Pre-create an empty vector with a discriminat variable
-mydf$feature &lt;- &quot;NA&quot;
-
-## Assign categorical variables to specific positions of the data frame
-mydf$feature[groupA] &lt;- &quot;groupA&quot;
-
-## Assign categorical variables to specific positions of the data frame
-mydf$feature[groupB] &lt;- &quot;groupB&quot;</code></pre>
-<p>Then, evaluate the attribute <em>mode</em> for each vector of the
-<em>data frame</em></p>
-<pre><code>is.numeric(mydf$mydata)
-is.factor(mydf$feature)
-is.character(mydf$feature)
-## OR
-mode(mydf$feature)
-mode(mydf$mydata)</code></pre>
-<p>Finally, we need to create a discriminant variable to assess
-<em>mydata</em> data and complete the <em>data frame</em>
-formatting:</p>
-<pre><code>## Convert characters into a discriminant factor
-mydf$feature &lt;- as.factor(mydf$feature)
-
-## Assess the factor assignment
-levels(mydf$feature)
-
-## The data frame is ready for statistical and graphical assessments
-tapply(mydf$mydata, mydf$feature, median)
-boxplot(mydf$mydata ~ mydf$feature)</code></pre>
-</div>
-<div id="multiclass-r-objects-and-interactions" class="section level3">
-<h3>Multiclass R objects and interactions</h3>
-<p>Following the below code, we will build a <em>data frame</em> with
-three different variables per observation:</p>
-<pre><code>my_variables&lt;-rep(c(&quot;Yes&quot;, &quot;No&quot;), 500) ## Setting a vector with a two-level factor
-set.seed(2025) ## Seed for random generator
-my_numbers&lt;-sample(450:1800, 1000, replace=TRUE) ## Setting a range of values to generate randomly</code></pre>
-<p>Then, we can evaluate their attributes. Once we distinguish the
-nature of those information <em>vectors</em>, we proceed to merge them
-into the desired <em>data frame</em>.</p>
-<pre><code>mydf &lt;- as.data.frame(my_numbers) ## Adding my previous vectors into a data frame
-mydf[,2] &lt;- my_variables
-head(mydf) ## Checking top entries of my data frame
-dim(mydf) ## Evaluating the dimension attribute
-colnames(mydf) &lt;- c(&quot;Score&quot;, &quot;Growth&quot;) ## Setting proper column (variable) names
-head(mydf)</code></pre>
-<p>Now, let’s create new discriminant <em>factors</em>:</p>
-<pre><code>mydf$Sex&lt;-rep(c(&quot;Female&quot;, &quot;Male&quot;), 500) ## New variable with pre-defined &quot;Sex&quot; column name
-mydf$Enzyme.act &lt;-rep(c(&quot;High&quot;, &quot;Mild&quot;, &quot;Low&quot;, &quot;None&quot;), 250) ## New variable with pre-defined &quot;Enzyme.act&quot; column name
-head(mydf)</code></pre>
-<p>Evaluate <em>attributes</em> of different variables assembled into
-our <em>data frame</em>, including <em>mode</em>, <em>length</em>,
-<em>dimension</em>, and <em>levels</em> of the factors.</p>
-<p>Once you have noticed all the above aspects relevant to your <em>data
-frame</em> structure, we can proceed to explore this dataset in detail.
-The most intuitive analysis is looking at distributions across variables
-independently, taking into account the grouping factors or not.</p>
-<pre><code>## Assessing the average of the numeric variable
-mean(mydf$Score) 
-
-## Retrieving the standard deviation of the numeric variable
-sd(mydf$Score)
-
-## Computing the inter-quartile distribution
-quantile(mydf$Score)
-
-## Calculating 95% Confidence Interval (CI)
-t.test(mydf$Score)$conf.int ## Exploring particular elements from the created object</code></pre>
-<p>Once the numeric variable distribution is evaluated globally, we can
-assess its distribution across different discriminate variables
-(<em>factor</em>). For instance, we will try computing basic statistics
-for the <em>Score</em> numeric variable when discriminated by
-<em>Enzyme.act</em> factor variable:</p>
-<pre><code>## Function to evaluate a numeric variable distribution across factors
-tapply(mydf$Score, mydf$Enzyme.act, mean)
-tapply(mydf$Score, mydf$Enzyme.act, sd)
-tapply(mydf$Score, mydf$Enzyme.act, quantile)</code></pre>
-<p>Please, compute the same statistics for <em>Score</em> numeric
-variable across <em>Sex</em> and <em>Growth</em> factors.</p>
-<p>In case we need a visual inspection of certain results of interest,
-we can launch a rapid graphical visualization of the distribution
-grouped by a particular discriminant variable (<em>factor</em>):</p>
-<pre><code>## Make a basic boxplot
-boxplot(mydf$Score ~ mydf$Enzyme.act)
-stripchart(Score ~ Enzyme.act, data = mydf, vertical = TRUE, method = &quot;jitter&quot;, jitter = 0.2, pch = 21, cex = 0.5, add = TRUE, col = c(&quot;black&quot;, &quot;black&quot;, &quot;black&quot;, &quot;black&quot;))</code></pre>
-<hr />
+<p>☑ Get the information in a pre-formatted manner according to
+structure of the <em>R objects</em></p>
+<p>☑ Access to the pre-formatted information from the pre-defined
+<em>working directory</em></p>
+<p>To read and write files in R, we need to know our current working
+directory. To find the complete path to our working directory, we can
+use the following <strong>R</strong> function:</p>
+<p><code>getwd() ## get working directory</code></p>
+<p>The resulting path is where your data must be located so R can read
+it. However, the working directory can be changed with the function:</p>
+<p><code>setwd() ## set working directory</code></p>
+<p>Declaring as function argument the path of your choice between
+quotes. To centralize all the practical file exchange work from now on,
+we will create in your respective OS a folder named <em>“agroal”</em>.
+This is:</p>
+<p><strong>for Windows users</strong></p>
+<p><em>C:\agroal</em></p>
+<p><strong>for Linux/Ubuntu users</strong></p>
+<p><em>/home/agroal</em></p>
+<p><strong>for Mac users</strong></p>
+<p><em>/Users/your user/agroal</em></p>
+<p>Once the working directory was created, this <em>“agroal”</em> folder
+will be the local repository for downloading, loading, writing and
+reading all files related to this <strong>R</strong> training sessions.
+Accordingly, you must position your R environment in this working
+directory as follows:</p>
+<p><code>setwd(&quot;C:\agroal&quot;) ## For Windows users</code></p>
+<p><code>setwd(&quot;/home/agroal&quot;) ## For Linux users</code></p>
+<p><code>setwd(&quot;/Users/your user/agroal&quot;) ## For Mac users</code></p>
+<p>For practical reasons we will download the <a href="https://github.com/agRo-al/agro-al.github.io/blob/main/BEDCA_dataset">BEDCA</a>
+dataset and save in the <em>agroal</em> working directory.</p>
 </div>
 </div>
 
