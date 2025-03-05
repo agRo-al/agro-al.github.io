@@ -364,14 +364,16 @@ taken into account:</p>
 <!-- unordered lists -->
 <p>☑ Get the information in a pre-formatted manner according to
 structure of the <em>R objects</em></p>
-<p>☑ Access to the pre-formatted information from the pre-defined
+<p>☑ Access to the pre-formatted information from a pre-defined
 <em>working directory</em></p>
-<p>To read and write files in R, we need to know our current working
-directory. To find the complete path to our working directory, we can
-use the following <strong>R</strong> function:</p>
+<p>Regarding the last consideration, for reading and writing files in
+<strong>R</strong>, we need to know our current working directory. To
+find the complete path to our working directory, we can use the
+following <strong>R</strong> function:</p>
 <p><code>getwd() ## get working directory</code></p>
-<p>The resulting path is where your data must be located so R can read
-it. However, the working directory can be changed with the function:</p>
+<p>The resulting path is where your data must be located so
+<strong>R</strong> can read it. However, the working directory can be
+changed with the function:</p>
 <p><code>setwd() ## set working directory</code></p>
 <p>Declaring as function argument the path of your choice between
 quotes. To centralize all the practical file exchange work from now on,
@@ -383,23 +385,96 @@ This is:</p>
 <p><em>/home/agroal</em></p>
 <p><strong>for Mac users</strong></p>
 <p><em>/Users/your user/agroal</em></p>
-<p>Once the working directory was created, this
+<p>Once the working directory is created, this
 <strong><em>“agroal”</em></strong> folder will be the local repository
-for downloading, loading, writing and reading all files related to this
-<strong>R</strong> training sessions. Accordingly, you must position
-your R environment in this working directory as follows:</p>
+for downloading, loading, writing and reading all files related to these
+<strong>R</strong> training sessions. Accordingly, from now on before
+starting every hands-on session you must position your R environment in
+this working directory as follows:</p>
 <p><code>setwd(&quot;C:\agroal&quot;) ## For Windows users</code></p>
-<p><code>setwd(&quot;/home/agroal&quot;) ## For Linux users</code></p>
-<p><code>setwd(&quot;/Users/your user/agroal&quot;) ## For Mac users</code></p>
-<p>For practical reasons we will download the <a href="https://github.com/agRo-al/agro-al.github.io/blob/main/BEDCA_dataset">BEDCA</a>
-dataset (<em>NutrienTrackeR</em> library <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>) and save our
-respective <strong><em>agroal</em></strong> working directory.</p>
+<p><code>setwd(&quot;/home/user/agroal&quot;) ## For Linux users</code></p>
+<p><code>setwd(&quot;/Users/user/agroal&quot;) ## For Mac users</code></p>
+<p>If the working directory issue is understood, now we must pay
+attention to the file data. <strong>R</strong> can read and load
+datasets stored in ASCII <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> text. For reading external datasets,
+<strong>R</strong> has the <em>read.table</em> function that implicitly
+recognize <em>data frame</em> objects (see Session #3). The
+<em>read.table()</em> function has different variants differing in the
+default arguments declared to read the external data file. Take a look
+into the <strong>RStudio</strong> console and explore arguments for
+every of the following equivalent functions:</p>
+<p><code>read.table()</code></p>
+<p><code>read.csv()</code></p>
+<p><code>read.csv2()</code></p>
+<p><code>read.delim()</code></p>
+<p><code>read.delim2()</code></p>
+<p><strong>GEEK NOTE</strong>: <strong>R</strong> is also able to read,
+for instance, <em>Excel</em> files. As this functionality is very useful
+for a more advanced use of R, we will eventually explore latter on.</p>
+<p>For practical reasons we will consider the function
+<em>read.table()</em> as the main function to read our pre-formatted
+external data. It creates a data frame, and so is the main way to read
+data in tabular form. From the large number of arguments to define in
+the <em>read.table()</em> function (check it out with help command) the
+most critical ones to set are:</p>
+<!-- unordered lists -->
+<ul>
+<li><p><strong><em>file</em></strong>: the name of the file (including
+path if needed) between quotes “”</p></li>
+<li><p><strong><em>header</em></strong>: logical value TRUE or
+FALSE</p></li>
+<li><p><strong><em>sep</em></strong>: character used as field delimiter
+(semicolon ‘;’ | comma ‘,’ | colon ‘:’ | tab ‘\t’ | white space ’
+’)</p></li>
+<li><p><strong><em>dec</em></strong>: character used for the decimal
+point</p></li>
+<li><p><strong><em>col.names</em></strong>: a character vector with the
+variable names (if no header disclosed, then by default: V1, V2,
+V3…)</p></li>
+<li><p><strong><em>row.names</em></strong>: a character vector with the
+names of the observations between quotes “”</p></li>
+<li><p><strong><em>as.is</em></strong>: logical (TRUE or FALSE) argument
+to control the conversion of character variables as factors (if
+TRUE).</p></li>
+</ul>
+<p>Before proceeding to test <em>read.table()</em> function, we need to
+download a valid dataset to read. So, for practical reasons we will
+download the <strong>BEDCA</strong> dataset (<em>NutrienTrackeR</em>
+library <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>) and save our respective
+<strong><em>agroal</em></strong> working directory using a specific
+<strong>R</strong> function as follows:</p>
+<pre><code>## Declare the URL of the file to download
+url &lt;- &quot;https://shorturl.at/CENWX&quot;
+
+## Set the name and location where you want to save it (agroal working directory) 
+
+file_path &lt;- &quot;/home/user/agroal/BEDCA_dataset.csv&quot; #path according to your OS
+
+## Execute the download.file() function, passing the above set arguments
+download.file(url, file_path)</code></pre>
+<p>At this point, we can now launch the <em>read.table</em> function
+following the next code:</p>
+<pre><code>mydata &lt;- read.table(&quot;BEDCA_dataset.csv&quot;, 
+                     header = TRUE,
+                     sep = &quot;\t&quot;,
+                     row.names = &quot;food_id&quot;,
+                     as.is = TRUE
+                     )</code></pre>
+<p>Once the dataset is successfully read by <strong>R</strong>, it is
+time to explore some attributes of the variables contained in the
+<em>data frame</em> and of the object as a whole. You’re open to using
+some of the functions already seen in previous sessions.</p>
+<hr />
+</div>
+<div id="using-r-base-datasets" class="section level3">
+<h3>Using R base datasets</h3>
 </div>
 </div>
 <div class="footnotes footnotes-end-of-document">
 <hr />
 <ol>
-<li id="fn1"><p><a href="https://cran.r-project.org/web/packages/NutrienTrackeR/vignettes/NutrienTrackeR.html" class="uri">https://cran.r-project.org/web/packages/NutrienTrackeR/vignettes/NutrienTrackeR.html</a>.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://en.wikipedia.org/wiki/ASCII" class="uri">https://en.wikipedia.org/wiki/ASCII</a>.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://cran.r-project.org/web/packages/NutrienTrackeR/vignettes/NutrienTrackeR.html" class="uri">https://cran.r-project.org/web/packages/NutrienTrackeR/vignettes/NutrienTrackeR.html</a>.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 
