@@ -61,6 +61,7 @@ Alfonso Benítez Páez (abenitez@iata.csic.es).
 * [Session 3 - Understanding R objects (2025.03.14)](https://agro-al.github.io)
 * [Session 4 - Creating and manipulating R objects (2025.03.28)](https://agro-al.github.io)
 * [Session 5 - Reading, writing, and loading datasets/objects (2025.04.04)](https://agro-al.github.io)
+* [Session 6 - Basic arithmetic and statistical functions (2025.04.11)](https://agro-al.github.io)
 
 ---
 
