@@ -60,7 +60,7 @@ Alfonso Benítez Páez (abenitez@iata.csic.es).
 * [Session 2 - R functions, operators and objects (2025.03.07)](session2.html)   &#9745; 
 * [Session 3 - Understanding R objects (2025.03.14)](session3.html)   &#9745;
 * [Session 4 - Creating and manipulating R objects (2025.03.28)](https://agro-al.github.io)
-* [Session 5 - Reading, writing, and loading datasets/objects (2025.04.04)](https://agro-al.github.io)
+* [Session 5 - Reading and writing R objects (2025.04.04)](https://agro-al.github.io)
 * [Session 6 - Applying arithmetic, statistics, and simple functions (2025.04.11)](https://agro-al.github.io)
 
 ---
