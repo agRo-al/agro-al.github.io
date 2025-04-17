@@ -49,7 +49,13 @@ La Microcredencial tendrá una duración de **50 horas (2 ECTS)** y las certific
 
 ### *Dirección y contacto*
 
-Alfonso Benítez Páez Ph.D. | Científico Titular IATA-CSIC | Grupo de Bioinformática, Biología Computacional y Ciencia de Datos | E-mail: abenitez@iata.csic.es
+Alfonso Benítez Páez Ph.D. 
+
+Científico Titular IATA-CSIC
+
+Grupo de Bioinformática, Biología Computacional y Ciencia de Datos
+
+E-mail: abenitez@iata.csic.es
 
 ---
 
