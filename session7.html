@@ -721,7 +721,7 @@ table(as.factor(mydatax2var$Fat.content):as.factor(mydatax2var$food_group))
 mycontigency.table &lt;- matrix(table(as.factor(mydatax2var$Fat.content):as.factor(mydatax2var$food_group)), nrow = 2, ncol = 2, byrow = F)
 
 # Adding column labels to the matrix indexing factor levels
-colnames(mycontigency.table) &lt;- c( levels(as.factor(mydatax2var$food_group))[1], levels(as.factor(mydatax2var$food_group))[2])
+colnames(mycontigency.table) &lt;- c(levels(as.factor(mydatax2var$food_group))[1], levels(as.factor(mydatax2var$food_group))[2])
 
 # Adding row labels to the matrix indexing &quot;fat content&quot; levels
 rownames(mycontigency.table) &lt;- c( &quot;Low.fat&quot;, &quot;High.fat&quot;)
