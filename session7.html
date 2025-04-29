@@ -694,7 +694,7 @@ cor.test(mydata$Energy.kj, mydata$Total.FA, method = &quot;kendall&quot;, exact 
 <li><p><em>fisher.test(x, y)</em>: it computes the <strong>Fisher’s
 exact</strong> to test independence of rows and columns in a contingency
 table. If data <em>x</em> is a 2 x 2 matrix, then <em>y</em> (factor) is
-not needed. Additional arhuments to control includes
+not needed. Additional arguments to control includes
 <em>alternative</em> and <em>simulate.p.value</em> to include Monte
 Carlo simulation. As <strong>Fisher test</strong> work on computing
 factorials, it may not work properly for large sample sizes and results
@@ -708,6 +708,29 @@ statistical significance for small data (one cell count &gt; 5). If the
 <strong>Monte Carlo</strong> simulation is activated, the
 <strong>Yates’s correction</strong> will be obviated.</p></li>
 </ul>
+<pre><code># Example
+# Creating a new categorical variable - split samples by Total fat content (higher 50 g per 100 g)
+mydatax2var$Fat.content &lt;- mydatax2var$Total.FA &gt; 50
+mydatax2var$Fat.content
+
+# Using cross-classifying factors (*table* function) to build a matrix
+
+table(as.factor(mydatax2var$Fat.content):as.factor(mydatax2var$food_group))
+
+# Now we arrange such information into a matrix
+mycontigency.table &lt;- matrix(table(as.factor(mydatax2var$Fat.content):as.factor(mydatax2var$food_group)), nrow = 2, ncol = 2, byrow = F)
+
+# Adding column labels to the matrix indexing factor levels
+colnames(mycontigency.table) &lt;- c( levels(as.factor(mydatax2var$food_group))[1], levels(as.factor(mydatax2var$food_group))[2])
+
+# Adding row labels to the matrix indexing &quot;fat content&quot; levels
+rownames(mycontigency.table) &lt;- c( &quot;Low.fat&quot;, &quot;High.fat&quot;)
+
+# Inspecting the matrix object created
+View(mycontigency.table)
+
+# Executing Chi-square test with Monte-Carlo simulation
+chisq.test(mycontigency.table, simulate.p.value = T)</code></pre>
 <hr />
 </div>
 </div>
