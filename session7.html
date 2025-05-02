@@ -554,7 +554,7 @@ percentiles of the <em>x</em> elements distribution.</li>
 <em>x</em> elements distribution. Uses linear model (<em>lm</em>) by
 default.</li>
 </ul>
-<p><strong><em>BONUS TRACK</em></strong>: for any reason, *<strong>R
+<p><strong><em>BONUS TRACK</em></strong>: for any reason, <strong>R
 base</strong> does not contain a particular function to compute the
 standard error of the mean (SEM), a statistical parameter frequently
 used in data science. But there is no problem, as early steps in your
@@ -635,6 +635,18 @@ linear model. The formula (x ~ y) can adopt any optional model including
 covariation (x ~ y + a * z). The <em>data</em> argument must be
 defined.</li>
 </ul>
+<pre><code># Example
+# Testing Energy.kj variation across experimental groups
+aov(Energy.kj ~ food_group, data = mydatax3var)
+
+# Extracting more structured and human-readable information
+summary(aov(Energy.kj ~ food_group, data = mydatax3var))
+
+# Exploring additive effects of additional variables
+summary(aov(Energy.kj ~ food_group + Total.FA, data = mydatax3var))
+
+# Assuming and controlling covariation
+summary(aov(Energy.kj ~ food_group + Error(Total.FA), data = mydatax3var))</code></pre>
 <p><strong>Non-parametric two-group comparisons</strong></p>
 <ul>
 <li><em>wilcox.test(x, y)</em>: assuming non-parametric <em>x</em>
