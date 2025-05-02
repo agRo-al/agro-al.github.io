@@ -65,8 +65,8 @@ Alfonso Benítez Páez Ph.D. \| Científico Titular IATA-CSIC \| Grupo de Bioinf
 * [Session 7 - Applying arithmetic, statistics, and generic functions - part 1 (2025.04.25)](session7.html)   &#9745;
 * [Session 7 - Applying arithmetic, statistics, and generic functions - part 2 (2025.05.02)](session7.html)   &#9745;
 * [Session 8 - Data visualization (2025.05.09)](https://agro-al.github.io)
-* [Session 9 - Data project presentations (2025.05.16)](https://agro-al.github.io)
-* [Session 10 - Data project presentations (2025.05.23)](https://agro-al.github.io)
+* [Session 9 - Data project presentations - part 1 (2025.05.23)](https://agro-al.github.io)
+* [Session 10 - Data project presentations - part 2 (2025.05.23)](https://agro-al.github.io)
 
 
 
