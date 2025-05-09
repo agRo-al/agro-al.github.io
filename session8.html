@@ -443,16 +443,20 @@ hist(iris$Sepal.Width)
 ## barplot(x)
 barplot(iris$Sepal.Width)
 
+## sorting and re-ordering to plotting the variable again
+iris.ordered &lt;- iris[order(iris$Sepal.Width, decreasing = T),]
+barplot(iris.ordered$Sepal.Width)
+
 ## dotchart(x)
 dotchart(iris$Petal.Width)
 
 ## qqnorm(x)
-x &lt;- rt(350, df = 5)
+x &lt;- rt(100, df = 5)
 qqnorm(x)
 
 ## qqplot(x, y)
-x &lt;- sample(500, replace = T)
-y &lt;- rt(500, df = 3)
+x &lt;- sample(200, replace = T)
+y &lt;- rt(200, df = 3)
 qqplot(x, y)</code></pre>
 <p>Some arguments are common to all of the functions mentioned above.
 Here are the most relevant ones to ornament the output plots:</p>
@@ -547,6 +551,7 @@ plot(Total_lipid_.fat._.g., Energy_.kcal.,
      cex.lab = 1.2,
      title(&quot;Fat vs Energy content in BEDCA food&quot;),
      bg = &quot;lightblue&quot;)
+
 ## Executing low-level functions to add information
 abline(reg1, lty = 1, lwd = 3.0, col = &quot;darkgrey&quot;)
 text(x = 70, y = 100, paste(&quot;Intercept =&quot;, round(reg1$coefficients[1], 3)), cex = 0.7)
@@ -556,17 +561,20 @@ text(x = 70, y = 400, paste(&quot;p =&quot;, format(cor1$p.value, scientific = T
 
 
 
-## Creating another high-level function (boxplot)
-boxplot(iris$Sepal.Length ~ iris$Species,
+## Creating alternative high-level function for categorical variables (boxplot)
+
+## Subseting a dataset to containig multiple factor levels
+mydatax3var &lt;-  subset(mydata, food_group == &quot;Fats_and_oils&quot; | food_group == &quot;Fruits_and_fruit_products&quot; | food_group == &quot;Milk_and_milk_products&quot;)
+boxplot(mydatax3var$Energy_.kcal. ~ mydatax3var$food_group,
         col = c(&quot;blue&quot;,&quot;red&quot;, &quot;green&quot;),
         horizontal = T,
-        xlab = &quot;Length (cm)&quot;,
-        ylab = &quot;Species class&quot;,
-        ylim = c(min(iris$Sepal.Length) - 1, max(iris$Sepal.Length) + 1),
-        notch = T,
+        xlab = &quot;Energy content (kcal/100g)&quot;,
+        ylab = &quot;Food type&quot;,
+        ylim = c(min(mydatax3var$Energy_.kcal.) - 1, max(mydatax3var$Energy_.kcal.) + 1),
+        notch = F,
         )
-stripchart(iris$Sepal.Length ~ iris$Species,
-           col = c(&quot;blue&quot;,&quot;red&quot;, &quot;green&quot;),
+stripchart(mydatax3var$Energy_.kcal. ~ mydatax3var$food_group,
+           col = c(&quot;black&quot;,&quot;black&quot;, &quot;black&quot;),
            method = &quot;jitter&quot;,
            pch = 21,
            cex = 1,
@@ -629,28 +637,26 @@ library(ggplot2)
 ggplot(mydata, aes(Total_lipid_.fat._.g., Energy_.kcal.)) +
   geom_point() +
   #geom_point(color = &quot;black&quot;, size = 4, shape = 21, fill = &quot;red&quot;) +
-  xlab(&quot;Total fat (g) per 100g&quot;)+
-  ylab(&quot;Total energy (kcal) per 100g&quot;)+
+  xlab(&quot;Total fat (g) per 100g&quot;) +
+  ylab(&quot;Total energy (kcal) per 100g&quot;) +
   geom_smooth(method = lm, linetype = &quot;solid&quot;, fill =&quot;pink&quot;, color =&quot;black&quot;) +
   annotate(geom = &quot;text&quot;, x = 75, y = 250, label = paste(&quot;Pearson&#39;s R =&quot;, round(cor1$estimate, 3), sep = &quot; &quot;), color = &quot;black&quot;, size=5) + 
   annotate(geom = &quot;text&quot;, x = 75, y = 180, label = paste(&quot;p =&quot;, format(cor1$p.value, scientific = T), sep =&quot; &quot;), color = &quot;black&quot;, size = 5) +
   theme_classic() + 
-  theme(axis.text = element_text(size = 10), 
-        axis.title = element_text(size = 15, face = &quot;bold&quot;))
-        
-       
+  theme(axis.text = element_text(size = 10), axis.title = element_text(size = 15, face = &quot;bold&quot;))
+
 
 ## Configuring the functions and arguments for the boxplot
-ggplot(iris, aes(Species, Sepal.Length, fill = Species)) +
- geom_boxplot(notch = T, outlier.colour = &quot;black&quot;, outlier.shape = 19, outlier.size = 2) +
+ggplot(mydatax3var, aes(Energy_.kcal., food_group, fill = food_group)) +
+ geom_boxplot(notch = F, outlier.colour = &quot;black&quot;, outlier.shape = 19, outlier.size = 2) +
  #scale_fill_manual(values = c(&quot;#E41A1C&quot;, &quot;#377EB8&quot;, &quot;#C77CFF&quot;)) +
  #scale_fill_brewer(palette = &quot;Dark2&quot;) +
  geom_jitter(colour = &quot;black&quot;, size = 2.5, shape = 21, width = 0.1, height = 0.1) +
  guides(fill = &quot;none&quot;) +
- ggtitle(&quot;Edgar Anderson&#39;s Iris Data&quot;) +
+ ggtitle(&quot;BEDCA dataset&quot;) +
  #theme_classic(base_size = 20) + # to set all &quot;theme&quot; arguments at once
- ylab(&quot;Species class&quot;) +
- xlab(&quot;Sepal length (cm)&quot;) +
+ ylab(&quot;Food type&quot;) +
+ xlab(&quot;Energy content (kcal/100 g)&quot;) +
  theme(axis.text = element_text(size = 13), axis.title = element_text(size = 16, face = &quot;bold&quot;), title = element_text(size = 20, face = &quot;bold&quot;)) +
  theme(plot.margin = unit(c(0.25,0.25,0.25,0.25), &quot;cm&quot;))</code></pre>
 <hr />
