@@ -26,7 +26,7 @@ La presente **Microcredencial** tendrá como objetivo la formación de personal 
 * Lugar de impartición: **Instituto de Agroquímica y Tecnología de Alimentos (IATA-CSIC)**. [Carrer del Catedràtic Agustín Escardino Benlloch, 7 (Paterna, Valencia)](https://g.co/kgs/LRrDs2k).
 * Fecha de preinscripción: ~~del 7 al 31 de enero de 2025~~.
 * Fecha de oficialización de matrícula: ~~del 3 al 14 de febrero de 2025~~.
-* Fecha de inicio y fin: **Estimado entre el 28 de febrero y el 30 de mayo de 2025**.
+* Fecha de inicio y fin: **~~Estimado entre el 28 de febrero y el 23 de mayo de 2025~~**.
 * Número de plazas disponibles: ~~40~~.
 * Número de horas totales de la formación: 50h (2 ECTS).
 * Precio de matrícula: **sin coste** (primera versión financiada por el programa de Microcredenciales CSIC-MICIU).
@@ -65,8 +65,8 @@ Alfonso Benítez Páez Ph.D. \| Científico Titular IATA-CSIC \| Grupo de Bioinf
 * [Session 7 - Applying arithmetic, statistics, and generic functions - part 1 (2025.04.25)](session7.html)   &#9745;
 * [Session 7 - Applying arithmetic, statistics, and generic functions - part 2 (2025.05.02)](session7.html)   &#9745;
 * [Session 8 - Data visualization (2025.05.09)](session8.html)   &#9745;
-* [Session 9 - Data project presentations - part 1 (2025.05.23)](https://agro-al.github.io)
-* [Session 10 - Data project presentations - part 2 (2025.05.23)](https://agro-al.github.io)
+* [Session 9 - Data project presentations - part 1 (2025.05.23)](https://agro-al.github.io)   &#9745;
+* [Session 10 - Data project presentations - part 2 (2025.05.23)](https://agro-al.github.io)   &#9745;
 
 
 
