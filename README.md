@@ -72,10 +72,5 @@ Alfonso Benítez Páez Ph.D. \| Científico Titular IATA-CSIC \| Grupo de Bioinf
 
 ---
 
-### *Material creado por los participantes*
-
-
----
-
 ### *Financiación y auspicio*
 ![](agroal_support.png "agRoalMC support")
